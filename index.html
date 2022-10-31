@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş</title>
+    <script src='code.js'></script>
+    <link rel="stylesheet" href="main.css" media="screen">
+</head>
+<body>
+    <div class="fatih">
+        <h3>Ürün Sipariş Formu</h3>
+        <form action="#" id="formurun"></form>
+        <label for="uruntipi">Ürün Tipi Seçimi Yapınız</label>
+        <span>
+            <input type="radio" name="urunTipi" id="erkekUrunleri" value="E" onchange="urunleriGetir();">
+            <label for="erkekUrunleri">Erkek Ürünleri</label>
+            <input type="radio" name="urunTipi" id="kadinUrunleri" value="K" onchange="urunleriGetir();">
+            <label for="kadinUrunleri">Kadın Ürünleri</label>
+        </span>
+        <label for="urunListesi">Ürün Seçiniz</label>
+        <select name="" id="urunListesi" size="4"></select>
+        <select name="" id="urunAdedi"></select>
+
+        <label for="urunTaksidi">Taksit Sayısı Seçiniz</label>
+        <select name="" id="urunTaksidi"></select>
+
+        <input type="button" value="Hesapla" id="btnAraToplam" onclick="fiyatHesapla();">
+
+        <label for="txtAraToplam">Toplam Tutar</label>
+        <input type="text" name="" id="txtAraToplam" disabled>
+
+        <label for="txtKargo">Kargo Ücreti</label>
+        <input type="text" name="" id="txtAraToplam" disabled>
+    </div>
+    <script src='code.js'></script>
+
+</body>
+</html>
